@@ -1,4 +1,45 @@
-html {
+body {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
+
+/* NAVBAR */
+
+.navbar {
+  gap: 30%
+}
+
+.navbar-menu {
+  gap: 15px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img , .highlight-btn img {
+  width: 40px;
+}
+
+.logo p {
+  font-size: 120%;
+  margin: 5px;
+}
+
+.highlight-btn {
+  padding: 4px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 80%;
+}
+
+.highlight-btn p {
+  margin: 0;
+}
+
