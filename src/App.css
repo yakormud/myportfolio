@@ -104,7 +104,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25%;
+  margin-bottom: 15%;
 }
 
 .about-me p {
@@ -130,8 +130,12 @@ body {
   border-radius: 5px;
 }
 
+.stack-menu:hover {
+  cursor: pointer;
+}
+
 .active {
-  background-color: rgb(190, 93, 255);
+  background-color: rgb(91, 91, 91);
   color: white;
 }
 
@@ -139,6 +143,27 @@ body {
   background-color: white;
 }
 
-.tech-stack img{
-  width: 50px;
+
+.stack-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin-top: 20px;
 }
+
+.card{
+  margin: 10px;
+  text-align: center;
+}
+
+.card img{
+  width: 100px;
+  height: 100px;
+}
+
+.card span {
+  display: block;
+  margin-top: 5px;
+}
+

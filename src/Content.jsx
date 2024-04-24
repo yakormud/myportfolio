@@ -6,22 +6,18 @@ function Content() {
     const handleStackClick = (selectedStack) => {
         setStack(selectedStack);
     };
-    const stackImages = {
-        "React": mypic,
-        "JavaScript": mypic,
-        "HTML": mypic,
-        "CSS": mypic,
-        "Node.js": mypic,
-        "Java": mypic,
-        "Jira": mypic,
-        "Trello": mypic,
-        "Figma": mypic
-    };
-    const stackLists = {
-        "Front End": ["React", "JavaScript", "HTML", "CSS"],
-        "Back End": ["Node.js", "Java"],
-        "Other": ["Jira", "Trello", "Figma"]
-    };
+    // const stackImages = {
+    //     "React": mypic,
+    //     "JavaScript": mypic,
+    //     "HTML": mypic,
+    //     "CSS": mypic,
+    //     "Node.js": mypic,
+    //     "Java": mypic,
+    //     "Jira": mypic,
+    //     "Trello": mypic,
+    //     "Figma": mypic
+    // };
+    
     return (
         <div>
             <div className="flex-content main-content">
@@ -47,7 +43,7 @@ function Content() {
                     <a onClick={() => handleStackClick("Other")} className={stack === "Other" ? "active" : "notactive"}>Other</a>
                 </div>
                 <div className="tech-stack">
-                    <Stack stack={stack} stackLists={stackLists} stackImages={stackImages}/>
+                    <Stack stack={stack}/>
                 </div>
             </div>
         </div>
