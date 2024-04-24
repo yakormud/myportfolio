@@ -17,6 +17,9 @@ body {
 .navbar-menu {
   gap: 15px;
 }
+.navbar-menu a:hover {
+  cursor: pointer;
+}
 
 .flex {
   display: flex;
@@ -24,8 +27,12 @@ body {
   justify-content: center;
 }
 
-.logo img , .highlight-btn img {
+.logo img  {
   width: 40px;
+}
+
+.highlight-btn img {
+  width: 30px;
 }
 
 .logo p {
@@ -34,14 +41,20 @@ body {
 }
 
 .highlight-btn {
-  padding: 4px;
-  background-color: black;
-  color: white;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  height: 80%;
+  height: 90%;
+  border: 1px solid white;
+}
+
+.highlight-btn:hover {
+  cursor: pointer;
+  border: 1px solid black;
 }
 
 .highlight-btn p {
   margin: 0;
+  margin-left: 10px;
 }
 
