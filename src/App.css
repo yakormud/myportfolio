@@ -58,3 +58,55 @@ body {
   margin-left: 10px;
 }
 
+
+/* CONTENT */
+
+.flex-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20vw;
+}
+
+.flex-content .paragraph > * {
+  margin: 0;
+}
+
+.mypic-image img {
+  width: 300px;
+  border-radius: 50%; 
+}
+
+.paragraph h1{
+  font-size: 250%;
+}
+
+.paragraph h3 , .paragraph h4 {
+  font-weight: 400;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.rainbow {
+  font-size: 130%;
+}
+
+.main-content {
+  margin-top: 5%;
+  margin-bottom: 25%;
+}
+
+/* ABOUT ME */
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25%;
+}
+
+.about-me p {
+  width: 60%;
+}
