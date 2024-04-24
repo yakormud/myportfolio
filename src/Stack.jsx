@@ -10,7 +10,12 @@ import reactlogo from './assets/techstacks/react.png';
 import sqllogo from './assets/techstacks/sql.png';
 import trellologo from './assets/techstacks/trello.png';
 import { useState } from 'react';
-function Stack({ stack}) {
+function Stack() {
+
+    const [stack, setStack] = useState("Front End");
+    const handleStackClick = (selectedStack) => {
+        setStack(selectedStack);
+    };
     const stackImages = {
         "React": reactlogo,
         "JavaScript": jslogo,
@@ -25,21 +30,30 @@ function Stack({ stack}) {
         "Miro": mirologo
     };
     const stackLists = {
-        "Front End": ["React", "JavaScript", "HTML", "CSS"],
+        "Front End": ["HTML", "JavaScript", "CSS", "React"],
         "Back End": ["Node.js", "Java", "Sql"],
         "Other": ["Jira", "Trello", "Figma", "Miro"]
     };
     return (
-        <div className="tech-stack">
-            <div className="stack-cards">
-                {stackLists[stack].map((tech, index) => (
-                    <div key={index} className="card">
-                        <img src={stackImages[tech]} alt={tech} />
-                        <span>{tech}</span>
-                    </div>
-                ))}
+        <>
+            <div className="flex stack-menu">
+                <a onClick={() => handleStackClick("Front End")} className={stack === "Front End" ? "active" : "notactive"}>Front End</a>
+                <a onClick={() => handleStackClick("Back End")} className={stack === "Back End" ? "active" : "notactive"}>Back End</a>
+                <a onClick={() => handleStackClick("Other")} className={stack === "Other" ? "active" : "notactive"}>Other</a>
             </div>
-        </div>
+            <div className="tech-stack">
+                <div className="tech-stack">
+                    <div className="stack-cards">
+                        {stackLists[stack].map((tech, index) => (
+                            <div key={index} className="card">
+                                <img src={stackImages[tech]} alt={tech} />
+                                <span>{tech}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
 
