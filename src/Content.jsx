@@ -1,14 +1,29 @@
 import mypic from './assets/mypic.jpg';
-import linelogo from './assets/line.png';
 import gmaillogo from './assets/gmail.png';
 import phonelogo from './assets/phone.png';
 import { useState } from 'react';
 import Stack from './Stack'
+import Project from './Project'
 function Content() {
     // const [stack, setStack] = useState("Front End");
     // const handleStackClick = (selectedStack) => {
     //     setStack(selectedStack);
     // };
+    const projects = [
+        {
+            gif: mypic,
+            title: 'Project 1',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            techStack: ['React', 'Node.js', 'Express']
+        },
+        {
+            gif: mypic,
+            title: 'Project 2',
+            info: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+            techStack: ['HTML', 'CSS', 'JavaScript']
+        },
+        
+    ];
     return (
         <div>
             <div className="flex-content main-content">
@@ -32,6 +47,12 @@ function Content() {
                 <p>but I am looking for ways to develop myself further.</p>
                 <Stack />
             </div>
+            <div className="flex-column-centered stack-wrap">
+                <h1>Projects</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque repellat dolore exercitationem praesentium fugiat necessitatibus assumenda saepe ut distinctio.</p>
+                <Project listCard={projects}/>
+            </div>
+
             <div className="flex-column-centered">
                 <h1>Contact</h1>
                 <div className="contact-wrap">
@@ -42,10 +63,6 @@ function Content() {
                     <div className="flex logo">
                         <img src={phonelogo} alt="" />
                         <p>(+66)958837438</p>
-                    </div>
-                    <div className="flex logo">
-                        <img src={linelogo} alt="" />
-                        <p>yakor925</p>
                     </div>
                 </div>
             </div>

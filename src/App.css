@@ -15,7 +15,7 @@ body {
 }
 
 .navbar-menu {
-  gap: 15px;
+  gap: 20px;
 }
 .navbar-menu a:hover {
   cursor: pointer;
