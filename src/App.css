@@ -9,7 +9,9 @@ body {
 /* NAVBAR */
 
 .navbar {
-  gap: 30%
+  gap: 30%;
+  height: 60px;
+  background-color:aliceblue;
 }
 
 .navbar-menu {
