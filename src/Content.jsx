@@ -1,4 +1,7 @@
 import mypic from './assets/mypic.jpg';
+import linelogo from './assets/line.png';
+import gmaillogo from './assets/gmail.png';
+import phonelogo from './assets/phone.png';
 import { useState } from 'react';
 import Stack from './Stack'
 function Content() {
@@ -27,12 +30,24 @@ function Content() {
                 <h1>Tech Stack</h1>
                 <p>All of them I have used to create existing projects, none of them I am proficient in</p>
                 <p>but I am looking for ways to develop myself further.</p>
-                <Stack/>
+                <Stack />
             </div>
             <div className="flex-column-centered">
-                <h1>Projects</h1>
-                <p>All of them I have used to create existing projects, none of them I am proficient in</p>
-                <p>but I am looking for ways to develop myself further.</p>
+                <h1>Contact</h1>
+                <div className="contact-wrap">
+                    <div className="flex logo">
+                        <img src={gmaillogo} alt="" />
+                        <p>iamyakormud@gmail.com</p>
+                    </div>
+                    <div className="flex logo">
+                        <img src={phonelogo} alt="" />
+                        <p>(+66)958837438</p>
+                    </div>
+                    <div className="flex logo">
+                        <img src={linelogo} alt="" />
+                        <p>yakor925</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

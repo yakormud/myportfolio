@@ -9,6 +9,7 @@ import nodejslogo from './assets/techstacks/nodejs.png';
 import reactlogo from './assets/techstacks/react.png';
 import sqllogo from './assets/techstacks/sql.png';
 import trellologo from './assets/techstacks/trello.png';
+import threejslogo from './assets/techstacks/threejs.png';
 import { useState } from 'react';
 function Stack() {
 
@@ -27,11 +28,12 @@ function Stack() {
         "Trello": trellologo,
         "Figma": figmalogo,
         "Sql": sqllogo,
-        "Miro": mirologo
+        "Miro": mirologo,
+        "ThreeJS": threejslogo
     };
     const stackLists = {
         "Front End": ["HTML", "JavaScript", "CSS", "React"],
-        "Back End": ["Node.js", "Java", "Sql"],
+        "Back End": ["Node.js", "Java", "Sql", "ThreeJS"],
         "Other": ["Jira", "Trello", "Figma", "Miro"]
     };
     return (
