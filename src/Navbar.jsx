@@ -1,4 +1,5 @@
 import logo from './assets/mylogo.png';
+import gitlogo from './assets/gitlogo.png';
 
 function Navbar() {
     return (
@@ -9,10 +10,11 @@ function Navbar() {
             </div>
             <div className="flex navbar-menu">
                 <a>About</a>
+                <a>Tech Stack</a>
                 <a>Projects</a>
                 <a>Contact</a>
                 <div className="flex highlight-btn">
-                    <img src={logo} alt="" />
+                    <img src={gitlogo} alt="" />
                     <p>My Github</p>
                 </div>
             </div>
