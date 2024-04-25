@@ -331,6 +331,12 @@ html {
   :root{
     width: 100vw;
   }
+  .about-me p {
+    width: 80%;
+  }
+  .stack-wrap p{
+    width: 80%;
+  }
   .logo{
     flex-direction: row !important;
   }
