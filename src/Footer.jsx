@@ -43,9 +43,9 @@ function Footer() {
   }, []);
 
   return (
-    <div className="navbar flex">
+    <div className="footer flex">
       <div className="flex">
-        <p>This page was created {timeSinceCreation ? `about ${timeSinceCreation} ago` : ''}</p>
+        <p>This page was created {timeSinceCreation ? `about ${timeSinceCreation} ago` : ''} with a little help ? from GPT 🤨 and host using <span>Amazon Web Service😍</span></p>
       </div>
     </div>
   )

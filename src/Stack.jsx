@@ -10,6 +10,8 @@ import reactlogo from './assets/techstacks/react.png';
 import sqllogo from './assets/techstacks/sql.png';
 import trellologo from './assets/techstacks/trello.png';
 import threejslogo from './assets/techstacks/threejs.png';
+import ajaxlogo from './assets/techstacks/ajax.png';
+import phplogo from './assets/techstacks/php.png';
 import { useState } from 'react';
 function Stack() {
 
@@ -20,7 +22,7 @@ function Stack() {
     const stackImages = {
         "React": reactlogo,
         "JavaScript": jslogo,
-        "HTML": htmllogo,
+        "Html": htmllogo,
         "CSS": csslogo,
         "Node.js": nodejslogo,
         "Java": javalogo,
@@ -29,11 +31,13 @@ function Stack() {
         "Figma": figmalogo,
         "Sql": sqllogo,
         "Miro": mirologo,
-        "ThreeJS": threejslogo
+        "ThreeJS": threejslogo,
+        "Ajax": ajaxlogo,
+        "Php": phplogo
     };
     const stackLists = {
-        "Front End": ["HTML", "JavaScript", "CSS", "React"],
-        "Back End": ["Node.js", "Java", "Sql", "ThreeJS"],
+        "Front End": ["Html", "JavaScript", "CSS", "React", "Ajax"],
+        "Back End": ["Node.js", "Java", "Sql", "ThreeJS", "Php"],
         "Other": ["Jira", "Trello", "Figma", "Miro"]
     };
     return (

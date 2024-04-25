@@ -13,6 +13,8 @@ import reactlogo from './assets/techstacks/react.png';
 import sqllogo from './assets/techstacks/sql.png';
 import trellologo from './assets/techstacks/trello.png';
 import threejslogo from './assets/techstacks/threejs.png';
+import ajaxlogo from './assets/techstacks/ajax.png';
+import phplogo from './assets/techstacks/php.png';
 
 function Slideshow({ slides }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,7 +36,7 @@ function Slideshow({ slides }) {
     const stackImages = {
         "React": reactlogo,
         "JavaScript": jslogo,
-        "HTML": htmllogo,
+        "Html": htmllogo,
         "CSS": csslogo,
         "Node.js": nodejslogo,
         "Java": javalogo,
@@ -43,7 +45,9 @@ function Slideshow({ slides }) {
         "Figma": figmalogo,
         "Sql": sqllogo,
         "Miro": mirologo,
-        "ThreeJS": threejslogo
+        "ThreeJS": threejslogo,
+        "Ajax": ajaxlogo,
+        "Php": phplogo
     };
     return (
         <div className="slideshow-wrap">

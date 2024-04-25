@@ -6,11 +6,11 @@ import Content from './Content'
 
 function App() {
   return (
-   <div>
+   <>
     <Navbar/>
     <Content/>
     <Footer/>
-   </div> 
+   </> 
   )
 }
 
