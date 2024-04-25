@@ -1,9 +1,10 @@
-body {
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  width: 100vw;
 }
 
 /* NAVBAR */
@@ -11,11 +12,17 @@ body {
 .navbar {
   gap: 30%;
   height: 60px;
-  background-color:aliceblue;
+  background-color:whitesmoke;
+  position: sticky;
+  top:0;
+  z-index: 10;
 }
 
 .navbar-menu {
-  gap: 15px;
+  gap: 20px;
+}
+.navbar-menu a:hover {
+  cursor: pointer;
 }
 
 .flex {
@@ -24,8 +31,12 @@ body {
   justify-content: center;
 }
 
-.logo img , .highlight-btn img {
+.logo img  {
   width: 40px;
+}
+
+.highlight-btn img {
+  width: 30px;
 }
 
 .logo p {
@@ -34,14 +45,335 @@ body {
 }
 
 .highlight-btn {
-  padding: 4px;
-  background-color: black;
-  color: white;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  height: 80%;
+  height: 90%;
+  border: 1px solid white;
+}
+
+
+.highlight-btn:hover {
+  cursor: pointer;
+  border: 1px solid black;
 }
 
 .highlight-btn p {
   margin: 0;
+  margin-left: 10px;
+}
+
+
+
+/* CONTENT */
+
+.flex-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20vw;
+}
+
+.flex-content .paragraph > * {
+  margin: 0;
+}
+
+.btn img {
+  width: 30px;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  gap: 10px;
+  width: fit-content;
+}
+
+.btn p {
+  margin: 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.mypic-image img {
+  width: 300px;
+  border-radius: 50%; 
+}
+
+.paragraph h1{
+  font-size: 250%;
+}
+
+.paragraph h3 , .paragraph h4 {
+  font-weight: 400;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.rainbow {
+  font-size: 130%;
+}
+
+.main-content {
+  margin-top: 5%;
+  margin-bottom: 25%;
+}
+
+/* ABOUT ME */
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15%;
+}
+
+.about-me p {
+  width: 60%;
+  text-align: center;
+}
+
+
+/* TECH STACK */
+
+.stack-wrap p{
+  width: 60%;
+  text-align: center;
+  margin: 0;
+}
+
+.stack-menu {
+  margin-top: 2%;
+  gap: 15px;
+  background-color: whitesmoke;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.stack-menu a{
+  font-size: 120%;
+  width: 120px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.stack-menu:hover {
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
+
+.notactive{
+  background-color: white;
+}
+
+
+.stack-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin-top: 20px;
+}
+
+.card{
+  margin: 10px;
+}
+
+.card p {
+  width: 100% !important;
+}
+
+
+.card img{
+  width: 100px;
+  height: 100px;
+}
+
+.card span {
+  display: block;
+  margin-top: 5px;
+}
+
+
+/* PROJECT */
+
+.search-result img{
+  width: 200px;
+}
+
+.slideshow-wrap {
+  margin-top: 20px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.slideshow-container {
+  z-index: 1;
+  position: relative;
+  left: 10%;
+  width: 80%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+
+.button-container {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(50%);
+}
+
+.button-container button {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 150%;
+}
+
+.left-button {
+  margin-left: 20px;
+}
+
+.right-button {
+  margin-right: 20px;
+}
+
+.slideshow-info{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.stackribbon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.slideshow-info p{
+  width: 100% !important;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px ;
+  gap: 15px ;
+  border-radius: 5px;
+  padding: 10px ;
+}
+
+.tag img{
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+/* CONTACT */
+
+.contact-wrap > * {
+  margin-bottom: 5%;
+}
+
+
+/* FOOTER */
+.footer span {
+  font-weight: 500;
+
+}
+
+.footer {
+  background-color:rgb(210, 210, 210);
+  text-align: center;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+  :root{
+    width: 100vw;
+  }
+  .about-me p {
+    width: 80%;
+  }
+  .stack-wrap p{
+    width: 80%;
+  }
+  .logo{
+    flex-direction: row !important;
+  }
+  .flex{
+    flex-direction: column;
+  }
+  .stack-menu a{
+    width: 90%;
+  }
+  .stackribbon-wrap {
+    flex-wrap: wrap;
+  }
+  .stack-menu {
+    width: 90vw;
+  }
+  .flex-content{
+    flex-direction: column;
+  }
+  .stack-cards{
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+  .paragraph {
+    text-align: center;
+  }
+
+  .paragraph .btn {
+    width: 96%;
+  }
+
+  .navbar-menu{
+    display: none;
+  }
+
+  .footer{
+    width: 98%;
+  }
+
 }
 
