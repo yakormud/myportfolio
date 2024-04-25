@@ -64,6 +64,7 @@ html {
 }
 
 
+
 /* CONTENT */
 
 .flex-content {
@@ -320,5 +321,49 @@ html {
 .footer {
   background-color:rgb(210, 210, 210);
   text-align: center;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+  :root{
+    width: 100vw;
+  }
+  .logo{
+    flex-direction: row !important;
+  }
+  .flex{
+    flex-direction: column;
+  }
+  .stack-menu a{
+    width: 90%;
+  }
+  .stackribbon-wrap {
+    flex-wrap: wrap;
+  }
+  .stack-menu {
+    width: 90vw;
+  }
+  .flex-content{
+    flex-direction: column;
+  }
+  .stack-cards{
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+  .paragraph {
+    text-align: center;
+  }
+
+  .paragraph .btn {
+    width: 96%;
+  }
+
+  .navbar-menu{
+    display: none;
+  }
+
 }
 
