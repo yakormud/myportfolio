@@ -204,6 +204,92 @@ body {
   width: 200px;
 }
 
+.slideshow-wrap {
+  margin-top: 20px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+
+.button-container {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(50%);
+}
+
+.button-container button {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 150%;
+}
+
+.left-button {
+  margin-left: 20px;
+}
+
+.right-button {
+  margin-right: 20px;
+}
+
+.slideshow-info{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.stackribbon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.slideshow-info p{
+  width: 100% !important;
+  
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px ;
+  gap: 15px ;
+  border-radius: 5px;
+  padding: 10px ;
+}
+
+.tag img{
+  width: 20px;
+  height: 20px;
+}
 
 
 

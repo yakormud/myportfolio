@@ -49,7 +49,7 @@ function Stack() {
                         {stackLists[stack].map((tech, index) => (
                             <div key={index} className="card">
                                 <img src={stackImages[tech]} alt={tech} />
-                                <span>{tech}</span>
+                                <p>{tech}</p>
                             </div>
                         ))}
                     </div>

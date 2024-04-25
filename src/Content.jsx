@@ -6,26 +6,27 @@ import gitlogowhite from './assets/gitwhite.png';
 import { useState } from 'react';
 import Stack from './Stack'
 import Project from './Project'
+import Slideshow from './Slideshow';
 function Content() {
     // const [stack, setStack] = useState("Front End");
     // const handleStackClick = (selectedStack) => {
     //     setStack(selectedStack);
     // };
-    const projects = [
-        {
-            gif: mypic,
-            title: 'Project 1',
-            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            techStack: ['React', 'Node.js', 'Express']
+    const slideData = [
+        { 
+            url: mypic, 
+            title: 'Project 1', 
+            techStack: ['React', 'Node.js', 'HTML'], 
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' 
         },
-        {
-            gif: mypic,
-            title: 'Project 2',
-            info: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-            techStack: ['HTML', 'CSS', 'JavaScript']
+        { 
+            url: gitlogo, 
+            title: 'Project 2', 
+            techStack: ['HTML', 'CSS', 'JavaScript'], 
+            info: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
         },
-
     ];
+
     return (
         <div>
             <div className="flex-content main-content">
@@ -34,6 +35,7 @@ function Content() {
                     <h1>Nunthakorn Lamor</h1>
                     <h3>my interest is <span className='rainbow'>Full-Stack Web Development</span></h3>
                     <h4>I studied at Thammasat University.</h4>
+                    <br/>
                     <div className="flex btn">
                         <img src={gitlogowhite} alt="" />
                         <p>My Github</p>
@@ -56,7 +58,9 @@ function Content() {
             <div className="flex-column-centered stack-wrap">
                 <h1>Projects</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque repellat dolore exercitationem praesentium fugiat necessitatibus assumenda saepe ut distinctio.</p>
-                <Project listCard={projects} />
+                {/* <Project listCard={projects} /> */}
+                <Slideshow slides={slideData}/>
+
             </div>
 
             <div className="flex-column-centered">
