@@ -48,6 +48,7 @@ body {
   border: 1px solid white;
 }
 
+
 .highlight-btn:hover {
   cursor: pointer;
   border: 1px solid black;
@@ -70,6 +71,28 @@ body {
 
 .flex-content .paragraph > * {
   margin: 0;
+}
+
+.btn img {
+  width: 30px;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  gap: 10px;
+  width: fit-content;
+}
+
+.btn p {
+  margin: 0;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 .mypic-image img {
@@ -172,6 +195,13 @@ body {
 .card span {
   display: block;
   margin-top: 5px;
+}
+
+
+/* PROJECT */
+
+.search-result img{
+  width: 200px;
 }
 
 

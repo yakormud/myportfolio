@@ -1,6 +1,8 @@
 import mypic from './assets/mypic.jpg';
 import gmaillogo from './assets/gmail.png';
 import phonelogo from './assets/phone.png';
+import gitlogo from './assets/gitlogo.png';
+import gitlogowhite from './assets/gitwhite.png';
 import { useState } from 'react';
 import Stack from './Stack'
 import Project from './Project'
@@ -22,7 +24,7 @@ function Content() {
             info: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
             techStack: ['HTML', 'CSS', 'JavaScript']
         },
-        
+
     ];
     return (
         <div>
@@ -32,6 +34,10 @@ function Content() {
                     <h1>Nunthakorn Lamor</h1>
                     <h3>my interest is <span className='rainbow'>Full-Stack Web Development</span></h3>
                     <h4>I studied at Thammasat University.</h4>
+                    <div className="flex btn">
+                        <img src={gitlogowhite} alt="" />
+                        <p>My Github</p>
+                    </div>
                 </div>
                 <div className="mypic-image">
                     <img src={mypic} alt="" />
@@ -50,7 +56,7 @@ function Content() {
             <div className="flex-column-centered stack-wrap">
                 <h1>Projects</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque repellat dolore exercitationem praesentium fugiat necessitatibus assumenda saepe ut distinctio.</p>
-                <Project listCard={projects}/>
+                <Project listCard={projects} />
             </div>
 
             <div className="flex-column-centered">
