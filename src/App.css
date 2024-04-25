@@ -1,5 +1,5 @@
-html {
-  margin: 0;
+body {
+  margin: 0 !important;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -226,7 +226,8 @@ html {
   position: relative;
   left: 10%;
   width: 80%;
-  height: 600px;
+  height: 35vw;
+  max-height: 600px;
   overflow: hidden;
 }
 
@@ -334,6 +335,9 @@ html {
   .about-me p {
     width: 80%;
   }
+  .paragraphbtn{
+    flex-direction: row !important;
+  }
   .stack-wrap p{
     width: 80%;
   }
@@ -369,10 +373,6 @@ html {
 
   .navbar-menu{
     display: none;
-  }
-
-  .footer{
-    width: 98%;
   }
 
 }
