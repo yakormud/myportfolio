@@ -56,7 +56,7 @@ function Content() {
                     <h3>my interest is <span className='rainbow'>Full-Stack Web Development</span></h3>
                     <h4>I studied at Thammasat University.</h4>
                     <br/>
-                    <div className="flex btn" onClick={handleClick}>
+                    <div className="flex btn paragraphbtn" onClick={handleClick}>
                         <img src={gitlogowhite} alt=""/>
                         <p>My Github</p>
                     </div>
