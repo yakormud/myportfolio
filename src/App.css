@@ -365,5 +365,9 @@ html {
     display: none;
   }
 
+  .footer{
+    width: 98%;
+  }
+
 }
 
