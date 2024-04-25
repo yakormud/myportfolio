@@ -45,7 +45,7 @@ function Footer() {
   return (
     <div className="footer flex">
       <div className="flex">
-        <p>This page was created {timeSinceCreation ? `about ${timeSinceCreation} ago` : ''} with a little help ? from GPT 🤨 and host using <span>Amazon Web Service😍</span></p>
+        <p>This page was created {timeSinceCreation ? `about ${timeSinceCreation} ago` : ''} with a little help ? from GPT 🤨 😍</p>
       </div>
     </div>
   )
